@@ -1,0 +1,208 @@
+/* переменные */
+:root {
+  --text-blue: #2196f3;
+  --text-black: #212121;
+  --text-grey: #757575;
+  --text-grey-op60: rgba(255, 255, 255, 0.6);
+  --text-white: #ffffff;
+
+  --back-white: #e5e5e5;
+  --back-black-light: #2f303a;
+  --back-grey: #f5f4fa;
+}
+
+/* основной шрифт для всего документа и ссылок */
+body,
+a {
+  font-family: 'Roboto', sans-serif;
+}
+
+a {
+  color: var(--text-black);
+}
+
+/* шрифт Логотипа */
+.logo,
+.footer-logo {
+  font-family: 'Raleway', sans-serif;
+  color: var(--text-black);
+}
+
+/*===========================================================*/
+
+.contact-title,
+.features-title,
+.project-title {
+  display: none;
+}
+
+.logo-text,
+.nav-link:hover,
+.link:hover,
+.nav-link:focus,
+.link:focus {
+  color: var(--text-blue);
+}
+
+.link,
+.features-text,
+.command-text,
+.project-text {
+  color: var(--text-grey);
+}
+
+.hero-title,
+.hero-btn,
+.footer,
+.footer-logo,
+.project-btn:hover,
+.project-btn:focus {
+  color: var(--text-white);
+}
+
+.hero,
+.footer,
+.footer-logo,
+.footer-link {
+  background-color: var(--back-black-light);
+}
+
+.hero-btn,
+.project-btn:hover,
+.project-btn:focus {
+  background-color: var(--text-blue);
+}
+
+.command {
+  background-color: var(--back-grey);
+}
+
+.footer-link {
+  color: var(--text-grey-op60);
+}
+
+/*===============================================================*/
+
+.logo,
+.footer-logo {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+}
+
+.nav-title,
+.nav-link {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+}
+
+.hero-title {
+  font-style: normal;
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.hero-btn {
+  font-family: inherit;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 1.88;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+}
+
+.features-item {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+.features-text {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+}
+
+.occupation-title,
+.command-title {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+
+.command-name {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+
+  /*text-align: center;*/
+  letter-spacing: 0.03em;
+}
+
+.command-text {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 1.19;
+
+  /*text-align: center;*/
+  letter-spacing: 0.03em;
+}
+
+.address,
+.footer-link {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+}
+
+/* PORTFOLIO */
+
+.project-btn: {
+  font-family: inherit;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.63;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+
+.project-name {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+}
+
+.project-text {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.03em;
+}
