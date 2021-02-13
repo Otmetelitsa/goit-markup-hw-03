@@ -11,13 +11,12 @@
   --back-grey: #f5f4fa;
 }
 
+/*============================================================*/
+
 /* основной шрифт для всего документа и ссылок */
 body,
 a {
   font-family: 'Roboto', sans-serif;
-}
-
-a {
   color: var(--text-black);
 }
 
@@ -38,13 +37,13 @@ a {
 
 .logo-text,
 .nav-link:hover,
-.link:hover,
 .nav-link:focus,
-.link:focus {
+.contact-link:hover,
+.contact-link:focus {
   color: var(--text-blue);
 }
 
-.link,
+.contact-link,
 .features-text,
 .command-text,
 .project-text {
@@ -92,7 +91,7 @@ a {
   letter-spacing: 0.03em;
 }
 
-.nav-title,
+.nav-list,
 .nav-link {
   font-style: normal;
   font-weight: 500;
