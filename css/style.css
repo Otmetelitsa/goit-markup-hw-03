@@ -1,4 +1,5 @@
 /* переменные */
+
 :root {
   --text-blue: #2196f3;
   --text-black: #212121;
@@ -13,7 +14,8 @@
 
 /*============================================================*/
 
-/* основной шрифт для всего документа и ссылок */
+/* общие стили */
+
 body,
 a {
   font-family: 'Roboto', sans-serif;
@@ -27,7 +29,16 @@ a {
   color: var(--text-black);
 }
 
+.conteiner {
+  width: 1200px;
+  padding: 0 15px;
+  margin-left: auto;
+  margin-right: auto;
+  border: 1px solid red;
+}
+
 /*===========================================================*/
+/* group styles */
 
 .contact-title,
 .features-title,
@@ -72,15 +83,8 @@ a {
   background-color: var(--text-blue);
 }
 
-.command {
-  background-color: var(--back-grey);
-}
-
-.footer-link {
-  color: var(--text-grey-op60);
-}
-
 /*===============================================================*/
+/* header */
 
 .logo,
 .footer-logo {
@@ -92,12 +96,58 @@ a {
 }
 
 .nav-list,
-.nav-link {
+.contact-list {
   font-style: normal;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
+
+  margin: 0;
+  padding: 0;
+}
+
+.nav-list li {
+  padding: 32px 0;
+  margin-left: 50px;
+}
+
+.nav-list li:first-child {
+  margin-left: 0;
+}
+
+.logo {
+  padding-top: 24px;
+  padding-bottom: 25px;
+  margin-right: 93px;
+}
+
+.header-nav,
+.nav-list,
+.contact-list {
+  display: flex;
+}
+
+.contact-link {
+  margin-left: 50px;
+}
+
+.contact-list {
+  position: absolute;
+  left: 1078px;
+  top: 32px;
+}
+
+.contact-list:first-child {
+  margin-left: 0;
+}
+
+/* hero */
+.hero {
+  max-width: 1600px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
 }
 
 .hero-title {
@@ -105,9 +155,13 @@ a {
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
-  text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
+  text-align: center;
+
+  width: 696px;
+  padding-top: 213px;
+  margin: 0 0;
 }
 
 .hero-btn {
@@ -116,11 +170,17 @@ a {
   font-weight: bold;
   font-size: 16px;
   line-height: 1.88;
-  display: flex;
-  align-items: center;
-  text-align: center;
   letter-spacing: 0.06em;
+  text-align: center;
+
+  margin: 30px;
 }
+
+.conteiner-hero-btn {
+  align-items: center;
+}
+
+/* features */
 
 .features-item {
   font-style: normal;
@@ -137,6 +197,12 @@ a {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
+}
+
+/* command */
+
+.command {
+  background-color: var(--back-grey);
 }
 
 .occupation-title,
@@ -169,6 +235,12 @@ a {
   letter-spacing: 0.03em;
 }
 
+/* footer */
+
+.footer-link {
+  color: var(--text-grey-op60);
+}
+
 .address,
 .footer-link {
   font-style: normal;
@@ -178,7 +250,8 @@ a {
   letter-spacing: 0.03em;
 }
 
-/* PORTFOLIO */
+===========================================================================
+/* portfolio */
 
 .project-btn: {
   font-family: inherit;
