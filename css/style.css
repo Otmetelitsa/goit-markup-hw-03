@@ -242,6 +242,21 @@ h3 {
   margin-bottom: 0;
 }
 
+/* ==============occupation============ */
+
+.occupation-list {
+  display: flex;
+}
+
+.occupation-img {
+  width: 370px;
+  margin: 50px 30px 94px 0;
+}
+
+.occupation-img:last-child {
+  margin-right: 0;
+}
+
 /* ===============command=============== */
 
 .command {
