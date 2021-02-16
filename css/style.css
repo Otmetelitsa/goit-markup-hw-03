@@ -1,4 +1,4 @@
-/* переменные */
+/* VARIABLES */
 
 :root {
   --text-blue: #2196f3;
@@ -10,11 +10,11 @@
   --back-white: #e5e5e5;
   --back-black-light: #2f303a;
   --back-grey: #f5f4fa;
+
+  --set-gap: 30px;
 }
 
-/*=====================================*/
-
-/* общие стили */
+/* GENERAL STYLES*/
 
 *,
 ::after,
@@ -38,30 +38,19 @@ li,
 a,
 h1,
 h2,
-h3 {
+h3,
+p {
   margin: 0;
   padding: 0;
 }
 
-/* шрифт Логотипа */
-
-.logo,
-.footer-logo {
-  font-family: 'Raleway', sans-serif;
+img {
+  display: block;
+  min-width: 100%;
+  height: auto;
 }
 
-.conteiner {
-  width: 1200px;
-  padding: 0 15px;
-  margin: 0 auto;
-
-  /* удаление по окончании */
-  border: 1px solid red;
-}
-
-/*===========================================*/
-
-/* group styles */
+/* GROUP STYLES */
 
 .contact-title,
 .features-title,
@@ -108,7 +97,23 @@ h3 {
   background-color: var(--text-blue);
 }
 
-/* ==========header=========== */
+/* FONT LOGO */
+
+.logo,
+.footer-logo {
+  font-family: 'Raleway', sans-serif;
+}
+
+.conteiner {
+  width: 1200px;
+  padding: 0 15px;
+  margin: 0 auto;
+
+  /* удаление по окончании */
+  border: 1px solid red;
+}
+
+/* HEADER */
 
 .conteiner.header {
   display: flex;
@@ -172,7 +177,7 @@ h3 {
   margin-left: 330px;
 }
 
-/* ========hero======== */
+/* HERO */
 
 .hero {
   max-width: 1600px;
@@ -188,6 +193,8 @@ h3 {
   line-height: 1.36;
   letter-spacing: 0.06em;
   text-transform: uppercase;
+
+  text-align: center;
 
   padding-top: 213px;
   width: 696px;
@@ -206,10 +213,10 @@ h3 {
   height: 50px;
 }
 
-/* ========features======= */
+/* FEATURES */
 
 .features {
-  padding: 94px 0;
+  margin: 94px 0;
 }
 
 .features-list {
@@ -217,7 +224,7 @@ h3 {
 }
 
 .features-item {
-  min-width: 270px;
+  width: 270px;
   /*  Задаём ширину элементов  */
   flex-basis: calc(100% / 4 - 30px);
 }
@@ -242,7 +249,7 @@ h3 {
   margin-bottom: 0;
 }
 
-/* ==============occupation============ */
+/* OCCUPATION */
 
 .occupation-list {
   display: flex;
@@ -257,10 +264,27 @@ h3 {
   margin-right: 0;
 }
 
-/* ===============command=============== */
+/* COMMAND */
 
-.command {
+.conteiner.command {
   background-color: var(--back-grey);
+}
+
+.command-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.command-item {
+  background-color: var(--text-white);
+  width: 270px;
+  margin-top: 50px;
+  margin-bottom: 94px;
+  flex-basis: calc(100% / 4);
+
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
 }
 
 .occupation-title,
@@ -279,8 +303,9 @@ h3 {
   font-size: 16px;
   line-height: 1.19;
 
-  /*text-align: center;*/
   letter-spacing: 0.03em;
+  text-align: center;
+  margin-top: 30px;
 }
 
 .command-text {
@@ -289,20 +314,27 @@ h3 {
   font-size: 16px;
   line-height: 1.19;
 
-  /*text-align: center;*/
   letter-spacing: 0.03em;
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 30px;
 }
 
-/* =================footer=============== */
+/* FOOTER */
 
 .footer {
   max-width: 1600px;
   margin-left: auto;
   margin-right: auto;
+  padding: 60px 0;
 }
 
+.address {
+  margin-top: 20px;
+}
 .footer-link {
   color: var(--text-grey-op60);
+  margin-top: 9px;
 }
 
 .address,
@@ -314,10 +346,9 @@ h3 {
   letter-spacing: 0.03em;
 }
 
-==============================================
-==============================================
+/* FILTER */
 
-/* =================portfolio============== */
+/* PROJECTS */
 
 .project-btn: {
   font-family: inherit;
