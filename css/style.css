@@ -42,6 +42,7 @@ h3 {
   margin: 0;
   padding: 0;
 }
+
 /* шрифт Логотипа */
 
 .logo,
@@ -112,6 +113,9 @@ h3 {
 .conteiner.page-header {
   display: flex;
   padding: 0 15px;
+}
+
+.page-header {
   border-bottom: 1px solid #ececec;
 }
 
@@ -123,6 +127,7 @@ h3 {
 .link.current {
   color: var(--text-blue);
 }
+
 .link {
   padding: 32px 0;
   align-items: center;
@@ -164,20 +169,16 @@ h3 {
 .header-contacts {
   display: flex;
   align-items: center;
-  /* justify-content: flex-end; */
   margin-left: 330px;
-}
-
-.contact-link {
 }
 
 /* hero */
 
 .hero {
   max-width: 1600px;
+  height: 600px;
   margin-left: auto;
   margin-right: auto;
-  text-align: center;
 }
 
 .hero-title {
@@ -187,32 +188,83 @@ h3 {
   line-height: 1.36;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  text-align: center;
 
-  width: 696px;
   padding-top: 213px;
-  margin: 0 0;
+  width: 696px;
+  height: 120px;
+  /* text-align: center; */
+
+  /* justify-content: center; */
 }
 
 .hero-btn {
-  font-family: inherit;
   font-style: normal;
   font-weight: bold;
   font-size: 16px;
   line-height: 1.88;
   letter-spacing: 0.06em;
-  text-align: center;
 
-  margin: 30px;
-}
+  margin-top: 30px;
 
-.conteiner-hero-btn {
-  align-items: center;
+  width: 200px;
+  height: 50px;
+
+  /* display: flex; */
+  /* align-items: center;
+  text-align: center; */
+  border-radius: 4px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+
+  /* justify-content: center; */
+  /* text-align: center; */
+  /* margin-top: 30px; */
 }
 
 /* features */
 
+.features {
+   padding: 94px 0;
+}
+
+.features-list {
+   display: flex;
+}
+  /* Делаем Flex-контейнет многострочным */
+  /* flex-wrap: wrap; */
+  /* Компенсируем маржины элементов */
+  /* margin-left: -10px;
+  margin-top: -10px;
+  padding: 0;
+  list-style: none; */
+
+
 .features-item {
+min-width: 270px;
+/*  Задаём ширину элементов  */
+ flex-basis: calc(100% / 4 - 30px);
+  
+}
+  /* Задаём всем элементам маржины слева и сверху */
+  /* margin-left: 10px;
+  margin-top: 10px; */
+  /*  Задаём ширину элементов  */
+  /* flex-basis: calc(100% / 3 - 10px);
+  background-color: #fff;
+  border-radius: 4px;
+  box-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.2),
+    0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12); */
+} */
+
+/* .item h2 {
+  margin-top: 0;
+  font-size: 20px;
+}
+
+.item p {
+  margin: 0;
+} */
+
+.features-item-title {
   font-style: normal;
   font-weight: bold;
   font-size: 14px;
@@ -227,6 +279,9 @@ h3 {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
+
+  margin-top: 10px;
+  margin-bottom: 0;
 }
 
 /* command */
