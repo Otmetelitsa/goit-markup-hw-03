@@ -221,12 +221,14 @@ img {
 
 .features-list {
   display: flex;
+  margin-left: -30px;
 }
 
 .features-item {
   width: 270px;
-  /*  Задаём ширину элементов  */
+
   flex-basis: calc(100% / 4 - 30px);
+  margin-left: 30px;
 }
 
 .features-item-title {
@@ -250,37 +252,51 @@ img {
 }
 
 /* OCCUPATION */
+.occupation {
+  margin-bottom: 94px;
+}
 
 .occupation-list {
   display: flex;
+  margin-left: -30px;
+}
+
+.occupation-list img {
+  width: 370px;
 }
 
 .occupation-img {
-  width: 370px;
-  margin: 50px 30px 94px 0;
-}
-
-.occupation-img:last-child {
-  margin-right: 0;
+  flex-basis: calc(100% / 4 - 30px);
+  margin-top: 50px;
+  margin-left: 30px;
 }
 
 /* COMMAND */
 
-.conteiner.command {
+.command {
+  max-width: 1600px;
   background-color: var(--back-grey);
+  margin-left: auto;
+  margin-right: auto;
+  padding: 94px 0;
+}
+
+.command img {
+  width: 270px;
 }
 
 .command-list {
   display: flex;
   flex-wrap: wrap;
+  margin-right: -30px;
 }
 
 .command-item {
   background-color: var(--text-white);
-  width: 270px;
   margin-top: 50px;
-  margin-bottom: 94px;
-  flex-basis: calc(100% / 4);
+  margin-right: 30px;
+
+  flex-basis: calc(100% / 4 - 30px);
 
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -332,6 +348,7 @@ img {
 .address {
   margin-top: 20px;
 }
+
 .footer-link {
   color: var(--text-grey-op60);
   margin-top: 9px;
