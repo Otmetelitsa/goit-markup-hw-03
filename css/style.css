@@ -12,15 +12,15 @@
   --back-grey: #f5f4fa;
 }
 
+/*=====================================*/
+
+/* общие стили */
+
 *,
 ::after,
 ::before {
   box-sizing: border-box;
 }
-
-/*============================================================*/
-
-/* общие стили */
 
 body,
 a {
@@ -59,7 +59,8 @@ h3 {
   border: 1px solid red;
 }
 
-/*===========================================================*/
+/*===========================================*/
+
 /* group styles */
 
 .contact-title,
@@ -107,15 +108,14 @@ h3 {
   background-color: var(--text-blue);
 }
 
-/*===============================================================*/
-/* header */
+/* ==========header=========== */
 
-.conteiner.page-header {
+.conteiner.header {
   display: flex;
   padding: 0 15px;
 }
 
-.page-header {
+.header {
   border-bottom: 1px solid #ececec;
 }
 
@@ -172,7 +172,7 @@ h3 {
   margin-left: 330px;
 }
 
-/* hero */
+/* ========hero======== */
 
 .hero {
   max-width: 1600px;
@@ -192,9 +192,6 @@ h3 {
   padding-top: 213px;
   width: 696px;
   height: 120px;
-  /* text-align: center; */
-
-  /* justify-content: center; */
 }
 
 .hero-btn {
@@ -205,64 +202,25 @@ h3 {
   letter-spacing: 0.06em;
 
   margin-top: 30px;
-
   width: 200px;
   height: 50px;
-
-  /* display: flex; */
-  /* align-items: center;
-  text-align: center; */
-  border-radius: 4px;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-
-  /* justify-content: center; */
-  /* text-align: center; */
-  /* margin-top: 30px; */
 }
 
-/* features */
+/* ========features======= */
 
 .features {
-   padding: 94px 0;
+  padding: 94px 0;
 }
 
 .features-list {
-   display: flex;
+  display: flex;
 }
-  /* Делаем Flex-контейнет многострочным */
-  /* flex-wrap: wrap; */
-  /* Компенсируем маржины элементов */
-  /* margin-left: -10px;
-  margin-top: -10px;
-  padding: 0;
-  list-style: none; */
-
 
 .features-item {
-min-width: 270px;
-/*  Задаём ширину элементов  */
- flex-basis: calc(100% / 4 - 30px);
-  
-}
-  /* Задаём всем элементам маржины слева и сверху */
-  /* margin-left: 10px;
-  margin-top: 10px; */
+  min-width: 270px;
   /*  Задаём ширину элементов  */
-  /* flex-basis: calc(100% / 3 - 10px);
-  background-color: #fff;
-  border-radius: 4px;
-  box-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.2),
-    0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12); */
-} */
-
-/* .item h2 {
-  margin-top: 0;
-  font-size: 20px;
+  flex-basis: calc(100% / 4 - 30px);
 }
-
-.item p {
-  margin: 0;
-} */
 
 .features-item-title {
   font-style: normal;
@@ -284,7 +242,7 @@ min-width: 270px;
   margin-bottom: 0;
 }
 
-/* command */
+/* ===============command=============== */
 
 .command {
   background-color: var(--back-grey);
@@ -320,7 +278,7 @@ min-width: 270px;
   letter-spacing: 0.03em;
 }
 
-/* footer */
+/* =================footer=============== */
 
 .footer {
   max-width: 1600px;
@@ -341,8 +299,10 @@ min-width: 270px;
   letter-spacing: 0.03em;
 }
 
-===========================================================================
-/* portfolio */
+==============================================
+==============================================
+
+/* =================portfolio============== */
 
 .project-btn: {
   font-family: inherit;
