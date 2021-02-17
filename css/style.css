@@ -10,6 +10,8 @@
   --back-white: #e5e5e5;
   --back-black-light: #2f303a;
   --back-grey: #f5f4fa;
+  --back-grey-btn: #f5f4fa;
+  --border: #eeeeee;
 
   --set-gap: 30px;
 }
@@ -50,19 +52,35 @@ img {
   height: auto;
 }
 
+button {
+  padding: 0;
+  /* border: none; */
+  background-color: transparent;
+}
+
+button,
+button:active,
+button:focus {
+  outline: none;
+  /* decoration: none; */
+}
+
 /* GROUP STYLES */
 
 .contact-title,
 .features-title,
 .project-title {
   display: none;
+  /* visibility: hidden; */
 }
 
 .logo-text,
 .nav-item:hover,
 .nav-item:focus,
 .contact-link:hover,
-.contact-link:focus {
+.contact-link:focus,
+.buttom-list:hover,
+.buttom-list:focus {
   color: var(--text-blue);
 }
 
@@ -110,7 +128,7 @@ img {
   margin: 0 auto;
 
   /* удаление по окончании */
-  border: 1px solid red;
+  /* border: 1px solid red; */
 }
 
 /* HEADER */
@@ -197,8 +215,8 @@ img {
   text-align: center;
 
   padding-top: 213px;
+  margin-left: 433px;
   width: 696px;
-  height: 120px;
 }
 
 .hero-btn {
@@ -363,21 +381,71 @@ img {
   letter-spacing: 0.03em;
 }
 
-/* FILTER */
-
 /* PROJECTS */
+.project-filter {
+  display: flex;
+  margin-top: 94px;
+  margin-bottom: 16px;
+  justify-content: center;
+}
 
-.project-btn: {
-  font-family: inherit;
+.buttom-list {
+  height: 38px;
+  margin: 0 4px;
+  align-items: center;
+
+  border-radius: 4px;
+  background: var(--back-grey-btn);
+}
+
+.project-btn {
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.63;
   text-align: center;
   letter-spacing: 0.03em;
+  border: transparent;
+  cursor: pointer;
+
+  padding: 6px 22px;
+  border-radius: 4px;
+}
+
+.buttom-list:hover {
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+}
+
+.project-list {
+  /* outline: 1px solid red; */
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 4px;
+  margin-right: -30px;
+  margin-bottom: 94px;
+}
+
+.project-item {
+  /* outline: 1px solid red; */
+
+  flex-basis: calc(100% / 3 - 30px);
+  margin-top: 30px;
+  margin-right: 30px;
+}
+
+.card {
+  padding-top: 20px;
+  padding-left: 24px;
+  padding-bottom: 20px;
+
+  border-right: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
+  border-left: 1px solid var(--border);
 }
 
 .project-name {
+  /* outline: 1px solid teal; */
   font-style: normal;
   font-weight: bold;
   font-size: 18px;
@@ -386,9 +454,12 @@ img {
 }
 
 .project-text {
+  /* outline: 1px solid teal; */
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
   line-height: 1.88;
   letter-spacing: 0.03em;
+
+  margin-top: 4px;
 }
