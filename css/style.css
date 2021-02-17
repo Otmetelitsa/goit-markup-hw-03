@@ -192,7 +192,7 @@ button:focus {
 .header-contacts {
   display: flex;
   align-items: center;
-  margin-left: 330px;
+  margin-left: auto;
 }
 
 /* HERO */
